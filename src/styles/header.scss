@@ -1,4 +1,4 @@
-.header{
+.header {
     width: 100%;
     height: 88px;
     background-color: #fff;
@@ -25,23 +25,41 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+
+            &-action {
+                background-color: #FF3E79;
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+                justify-content: center;
+                align-items: center;
+                display: none;
+
+                @media (min-width: 768px) {
+                    display: flex;
+                }
+            }
         }
-        &--logo{
+
+        &--logo {
             width: 96px;
             height: 50px;
         }
-        &--divider{
+
+        &--divider {
             width: 2px;
             height: 32px;
             background-color: #EAEAEA;
             border-radius: 1px;
 
-            &-action{
+            &-action {
                 width: 2px;
                 height: 32px;
                 background-color: #EAEAEA;
                 border-radius: 1px;
                 display: none;
+
                 @media (min-width: 768px) {
                     display: block;
                 }
@@ -50,4 +68,3 @@
         }
     }
 }
-
