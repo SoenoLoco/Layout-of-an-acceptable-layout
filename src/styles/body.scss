@@ -30,6 +30,7 @@ body {
 .text-about p {
     padding-left: 16px;
     padding-right: 16px;
+    font-size: 14px;
 }
 
 .read-more-container {
@@ -53,7 +54,7 @@ body {
     margin-top: 16px;
 }
 
-.swiper {
+.swiper1 {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -107,36 +108,140 @@ body {
     padding: 16px 16px;
 }
 
-.swiper2{
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    gap: 5;
-    padding: 10px 0;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    margin-left: 16px;
+.swiper2 {
+    display: flex !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    scroll-behavior: smooth !important;
+    gap: 5 !important;
+    padding: 10px 0 !important;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+    margin-left: 16px !important;
 
 }
 
-.slide2{
-    display: flex;
-    flex: 0 0 auto;
-    width: 220px;
+.slide2 {
+    display: flex !important;
+    flex: 0 0 auto !important;
+    width: 220px !important;
+    height: 32px !important;
+    gap: 40px !important;
+    background-color: #FFFFFF !important;
+    padding-bottom: 20px !important;
+    padding-top: 20px !important;
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+    border-radius: 6px !important;
+    border: 2px solid #EAEAEA !important;
+    margin-right: 16px !important;
+}
+
+.brand-image {
+    width: 108px;
     height: 32px;
-    gap: 40px;
-    background-color: #FFFFFF;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    padding-right: 16px;
-    padding-left: 16px;
-    border-radius: 6px;
-    border: 2px solid #EAEAEA;
-    margin-right: 16px;
+    object-fit: contain;
 }
 
-.brand-image{
+.brand-go {
+    width: 35px;
+    height: 35px;
+    padding-left: 30px;
+}
+
+.swiper3 {
+    display: flex !important;
+    position: relative;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    scroll-behavior: smooth !important;
+    gap: 5 !important;
+    padding: 10px 0 !important;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+    margin-left: 16px !important;
 
 }
 
+.slide3 {
+    display: flex !important;
+    flex: 0 0 auto !important;
+    width: 220px !important;
+    height: 150px !important;
+    gap: 40px !important;
+    background-color: #FFFFFF !important;
+    padding-bottom: 20px !important;
+    padding-top: 20px !important;
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+    border-radius: 6px !important;
+    border: 2px solid #EAEAEA !important;
+    margin-right: 16px !important;
+}
+
+.brand-go-technic {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    padding-left: 184px;
+    padding-top: 125px;
+}
+
+.my-swiper-pagination {
+    width: 100%;
+    bottom: -0px;
+    left: 0;
+    height: 20px;
+}
+
+
+.swiper4 {
+    display: flex !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    scroll-behavior: smooth !important;
+    gap: 5 !important;
+    padding: 10px 0 !important;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+    margin-left: 16px !important;
+}
+
+.slide4 {
+    display: flex !important;
+    flex: 0 0 auto !important;
+    width: 250px !important;
+    height: 200px !important;
+    background-color: #FFFFFF !important;
+    border-radius: 6px !important;
+    border: 2px solid #EAEAEA !important;
+    margin-right: 16px !important;
+    flex-direction: column !important;
+    font-size: 14px !important;
+}
+
+.slide4 h3 {
+    color: #7E7E82;
+    font-weight: lighter;
+    margin-left: 16px;
+}
+
+.slide4 p {
+    font-weight: lighter;
+    margin-top: -10px;
+    margin-left: 16px;
+    margin-bottom: -2px;
+}
+
+.order {
+    background-color: #FF3E79;
+    border-radius: 16px !important;
+    border: 2px solid #EAEAEA !important;
+    color: #FFFFFF;
+    height: 32px;
+    width: 119px;
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 160px;
+    font-weight: bold;
+}

@@ -6,6 +6,10 @@
     <title>SPC</title>
     <link rel="stylesheet" href="./src/styles/normolize.scss" />
     <link rel="stylesheet" href="./src/global.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -45,7 +49,7 @@
     </header>
     <h1 class="main__title">Услуги и сервисы</h1>
 
-    <div class="swiper">
+    <div class="swiper1">
       <div class="slide1">Ремонтируемые устройства</div>
       <div class="slide">Дополнительные услуги</div>
       <div class="slide">Цены на услуги</div>
@@ -66,33 +70,116 @@
       <img class="company-picture" src="./src/image/images.svg" alt="" />
     </div>
 
-    <div class="brands">
+    <div class="swiper brands">
       <h2 class="second-heading">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h2>
 
-      <div class="swiper2">
-        <div class="slide2">
+      <div class="swiper-wrapper swiper2">
+        <div class="swiper-slide slide2">
           <img class="brand-image" src="./src/image/lenovo.svg" alt="" />
           <img class="brand-go" src="./src/image/go.svg" alt="" />
         </div>
-        <div class="slide2">
+        <div class="swiper-slide slide2">
           <img class="brand-image" src="./src/image/samsung.svg" alt="" />
           <img class="brand-go" src="./src/image/go.svg" alt="" />
         </div>
-        <div class="slide2"><img class="brand-image" src="./src/image/apple.svg" alt="" />
-          <img class="brand-go" src="./src/image/go.svg" alt="" /></div>
-        <div class="slide2">
+        <div class="swiper-slide slide2">
+          <img class="brand-image" src="./src/image/apple.svg" alt="" />
+          <img class="brand-go" src="./src/image/go.svg" alt="" />
+        </div>
+        <div class="swiper-slide slide2">
           <img class="brand-image" src="./src/image/bosch.svg" alt="" />
           <img class="brand-go" src="./src/image/go.svg" alt="" />
         </div>
-        <div class="slide2">
+        <div class="swiper-slide slide2">
           <img class="brand-image" src="./src/image/hp.svg" alt="" />
           <img class="brand-go" src="./src/image/go.svg" alt="" />
         </div>
-        <div class="slide2">
+        <div class="swiper-slide slide2">
           <img class="brand-image" src="./src/image/acer.svg" alt="" />
           <img class="brand-go" src="./src/image/go.svg" alt="" />
         </div>
+        <div class="swiper-pagination my-swiper-pagination"></div>
       </div>
     </div>
+
+    <div class="swiper technic">
+      <h2 class="second-heading">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h2>
+
+      <div class="swiper-wrapper swiper3">
+        <div class="swiper-slide slide3">
+          <div class="technic-view">Ремонт ноутбуков</div>
+          <img class="brand-go-technic" src="./src/image/go.svg" alt="" />
+        </div>
+        <div class="swiper-slide slide3">
+          <div class="technic-view">Ремонт планшетов</div>
+          <img class="brand-go-technic" src="./src/image/go.svg" alt="" />
+        </div>
+        <div class="swiper-slide slide3">
+          <div class="technic-view">Ремонт ПК</div>
+          <img class="brand-go-technic" src="./src/image/go.svg" alt="" />
+        </div>
+        <div class="swiper-slide slide3">
+          <div class="technic-view">Ремонт мониторов</div>
+          <img class="brand-go-technic" src="./src/image/go.svg" alt="" />
+        </div>
+      </div>
+      <div class="swiper-pagination my-swiper-pagination"></div>
+    </div>
+
+    <div class="swiper price">
+      <h2 class="second-heading">ЦЕНЫ НА УСЛУГИ</h2>
+
+      <div class="swiper-wrapper swiper4">
+        <div class="swiper-slide slide4">
+          <h3 class="third heading">Ремонтные услуги</h3>
+          <p>Тестирование с выдачей технического задания</p>
+          <h3 class="third heading">Цена</h3>
+          <p>Бесплатно</p>
+          <h3 class="third heading">Срок</h3>
+          <p>30-120 мин</p>
+          <button class="order">Заказать ></button>
+        </div>
+        <div class="swiper-slide slide4">
+          <h3 class="third heading">Ремонтные услуги</h3>
+          <p>Диагностика</p>
+          <h3 class="third heading">Цена</h3>
+          <p>Бесплатно</p>
+          <h3 class="third heading">Срок</h3>
+          <p>30 мин</p>
+          <button class="order">Заказать ></button>
+        </div>
+        <div class="swiper-slide slide4">
+          <h3 class="third heading">Ремонтные услуги</h3>
+          <p>Замена дисплея</p>
+          <h3 class="third heading">Цена</h3>
+          <p>1000 ₽</p>
+          <h3 class="third heading">Срок</h3>
+          <p>30-120 мин</p>
+          <button class="order">Заказать ></button>
+        </div>
+        <div class="swiper-slide slide4">
+          <h3 class="third heading">Ремонтные услуги</h3>
+          <p>Замена полифонического динамика</p>
+          <h3 class="third heading">Цена</h3>
+          <p>1000 ₽</p>
+          <h3 class="third heading">Срок</h3>
+          <p>30-120 мин</p>
+          <button class="order">Заказать ></button>
+        </div>
+        <div class="swiper-slide slide4">
+          <h3 class="third heading">Ремонтные услуги</h3>
+          <p>Замена программного обеспечения</p>
+          <h3 class="third heading">Цена</h3>
+          <p>1000 ₽</p>
+          <h3 class="third heading">Срок</h3>
+          <p>30-120 мин</p>
+          <button class="order">Заказать ></button>
+        </div>
+      </div>
+      <div class="swiper-pagination my-swiper-pagination"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./src/script.js"></script>
   </body>
 </html>
