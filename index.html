@@ -14,47 +14,49 @@
   <body>
     <header class="header">
       <ul class="header__navigation">
-        <li class="header__navigation--link">
-          <img class="image" src="./src/image/burg.svg" alt="" />
-        </li>
+        <div class="header-left">
+          <li class="header__navigation--link">
+            <img class="image" src="./src/image/burg.svg" alt="" />
+          </li>
 
-        <li class="header__navigation--divider-action"></li>
+          <li class="header__navigation--divider-action"></li>
+          <li class="header__navigation--logo">
+            <img class="image" src="./src/image/logo.svg" alt="" />
+          </li>
+        </div>
+        <div class="header-right">
+          <li class="header__navigation--link-action">
+            <img class="image" src="./src/image/phone.svg" alt="" />
+          </li>
 
-        <li class="header__navigation--logo">
-          <img class="image" src="./src/image/logo.svg" alt="" />
-        </li>
+          <li class="header__navigation--link-action">
+            <img class="image" src="./src/image/message.svg" alt="" />
+          </li>
 
-        <li class="header__navigation--link-action">
-          <img class="image" src="./src/image/phone.svg" alt="" />
-        </li>
+          <li class="header__navigation--link-action">
+            <img class="image" src="./src/image/user.svg" alt="" />
+          </li>
 
-        <li class="header__navigation--link-action">
-          <img class="image" src="./src/image/message.svg" alt="" />
-        </li>
+          <li class="header__navigation--divider"></li>
 
-        <li class="header__navigation--link-action">
-          <img class="image" src="./src/image/user.svg" alt="" />
-        </li>
+          <li class="header__navigation--link">
+            <img class="image" src="./src/image/tool.svg" alt="" />
+          </li>
 
-        <li class="header__navigation--divider"></li>
-
-        <li class="header__navigation--link">
-          <img class="image" src="./src/image/tool.svg" alt="" />
-        </li>
-
-        <li class="header__navigation--link">
-          <img class="image" src="./src/image/search.svg" alt="" />
-        </li>
+          <li class="header__navigation--link">
+            <img class="image" src="./src/image/search.svg" alt="" />
+          </li>
+        </div>
       </ul>
     </header>
     <h1 class="main__title">Услуги и сервисы</h1>
 
     <div class="swiper1">
-      <div class="slide1">Ремонтируемые устройства</div>
-      <div class="slide">Дополнительные услуги</div>
-      <div class="slide">Цены на услуги</div>
-      <div class="slide">Адреса сервисных центров</div>
-      <div class="slide">Специальные цены</div>
+      <div class="swiper1-tab active-tab">Ремонтируемые устройства</div>
+      <div class="swiper1-tab">Дополнительные услуги</div>
+      <div class="swiper1-tab">Цены на услуги</div>
+      <div class="swiper1-tab">Адреса сервисных центров</div>
+      <div class="swiper1-tab">Специальные цены</div>
     </div>
 
     <div class="text-about">
@@ -63,6 +65,7 @@
         Только у нас вы можете отремонтировать свой ноутбук Dell с официальной
         гарантией производителя.
       </p>
+      <p class="about">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
       <div class="read-more-container">
         <img class="arrow" src="./src/image/arrows.svg" alt="" />
         <div class="read-more-text">Читать далее</div>
@@ -98,8 +101,8 @@
           <img class="brand-image" src="./src/image/acer.svg" alt="" />
           <img class="brand-go" src="./src/image/go.svg" alt="" />
         </div>
-        <div class="swiper-pagination my-swiper-pagination"></div>
       </div>
+      <div class="swiper-pagination my-swiper-pagination"></div>
     </div>
 
     <div class="swiper technic">
@@ -179,7 +182,27 @@
       <div class="swiper-pagination my-swiper-pagination"></div>
     </div>
 
+    <div class="commercial-text">
+      <p>
+        Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную
+        услугу. Для получения коммерческого предложения на постоянное
+        обслуживание, оставьте заявку.
+      </p>
+      <div class="read-more-text1">Плучить коммерческое предложение</div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script src="./src/script.js"></script>
+    <script type="module" src="./src/script.js"></script>
   </body>
+  <footer>
+    <div class="footer-text">
+      <p>© 2019 CPS</p>
+      <p>Разработано командой Apesong</p>
+      <p>Политика конфиденциальности</p>
+      <p>
+        Информация, размещенная на данной странице, не является публичной
+        офертой
+      </p>
+    </div>
+  </footer>
 </html>

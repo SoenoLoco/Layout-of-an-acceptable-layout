@@ -3,6 +3,7 @@
     src: url(../font/TTLakes-Regular.ttf);
 }
 
+
 body {
     font-family: "tt";
     background-color: #F8F8F8;
@@ -13,6 +14,10 @@ body {
     padding-left: 12px;
     position: relative;
     font-weight: 900;
+
+    @media (min-width: 768px) {
+        padding-left: 24px;
+    }
 }
 
 .main__title::before {
@@ -25,18 +30,47 @@ body {
     top: 0;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
+
+}
+
+.text-about {
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 22px;
+    }
 }
 
 .text-about p {
     padding-left: 16px;
     padding-right: 16px;
     font-size: 14px;
+
+    @media (min-width: 768px) {
+        grid-column: 1 / 2;
+        padding-right: 80px;
+    }
+}
+
+.about {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: block;
+    }
+
 }
 
 .read-more-container {
     display: flex;
     align-items: center;
     gap: 10px;
+
+    @media (min-width: 768px) {
+        grid-column: 1 / 2;
+        margin-top: -45px;
+        gap: 1px;
+    }
 }
 
 
@@ -52,6 +86,14 @@ body {
 .company-picture {
     width: 100%;
     margin-top: 16px;
+
+    @media (min-width: 768px) {
+        grid-column: 2 / 3;
+        margin-top: -150px;
+        object-fit: cover;
+        border-radius: 15px;
+        width: 95%;
+    }
 }
 
 .swiper1 {
@@ -64,30 +106,15 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
     margin-left: 16px;
+
 }
 
 
-.slide {
+.swiper1-tab {
     scroll-snap-align: start;
     flex: 0 0 auto;
     width: 210px;
     height: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #7E7E82;
-    font-size: 16px;
-    text-align: center;
-    padding: 15px;
-    border-radius: 6px;
-}
-
-.slide1 {
-    scroll-snap-align: start;
-    flex: 0 0 auto;
-    width: 210px;
-    height: 16px;
-    border: 2px solid #B8FFEC;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,149 +126,208 @@ body {
     white-space: nowrap;
 }
 
-.second-heading {
-    border-top: solid 1px #D9FFF5;
-    background-color: #FFFFFF;
+.swiper1-tab.active-tab {
     color: #7E7E82;
-    font-size: 16px;
-    font-weight: lighter;
-    padding: 16px 16px;
+    background-color: #FFFFFF;
+    border: 2px solid #B8FFEC;
+    margin-right: 16px;
+}
+
+.second-heading {
+    border-top: solid 1px #D9FFF5 !important;
+    background-color: #FFFFFF !important;
+    color: #7E7E82 !important;
+    font-size: 16px !important;
+    font-weight: lighter !important;
+    padding: 16px 16px !important;
 }
 
 .swiper2 {
-    display: flex !important;
-    overflow-x: auto !important;
-    scroll-snap-type: x mandatory !important;
-    scroll-behavior: smooth !important;
-    gap: 5 !important;
-    padding: 10px 0 !important;
-    -ms-overflow-style: none !important;
-    scrollbar-width: none !important;
     margin-left: 16px !important;
+    margin-bottom: 40px !important;
+
+    @media (min-width: 768px) {
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 16px !important;
+        column-gap: 0 !important;
+        overflow: visible !important;
+        height: auto !important;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+        margin-bottom: 16px !important;
+    }
 
 }
 
 .slide2 {
     display: flex !important;
-    flex: 0 0 auto !important;
-    width: 220px !important;
+    width: 210px !important;
     height: 32px !important;
     gap: 40px !important;
     background-color: #FFFFFF !important;
-    padding-bottom: 20px !important;
-    padding-top: 20px !important;
-    padding-right: 16px !important;
-    padding-left: 16px !important;
+    padding: 20px 16px !important;
     border-radius: 6px !important;
     border: 2px solid #EAEAEA !important;
-    margin-right: 16px !important;
+
+    @media (min-width: 768px) {
+        width: 190px !important;
+        height: 32px !important;
+    }
 }
 
 .brand-image {
-    width: 108px;
-    height: 32px;
-    object-fit: contain;
+    width: 108px !important;
+    height: 32px !important;
+    object-fit: contain !important;
 }
 
 .brand-go {
-    width: 35px;
-    height: 35px;
-    padding-left: 30px;
+    width: 35px !important;
+    height: 35px !important;
+    padding-left: 30px !important;
+
+    @media (min-width: 768px) {
+        padding-left: 10px !important;
+    }
 }
 
 .swiper3 {
-    display: flex !important;
-    position: relative;
-    overflow-x: auto !important;
-    scroll-snap-type: x mandatory !important;
-    scroll-behavior: smooth !important;
-    gap: 5 !important;
-    padding: 10px 0 !important;
-    -ms-overflow-style: none !important;
-    scrollbar-width: none !important;
     margin-left: 16px !important;
-
+    margin-bottom: 40px !important;
 }
 
 .slide3 {
     display: flex !important;
-    flex: 0 0 auto !important;
     width: 220px !important;
     height: 150px !important;
     gap: 40px !important;
     background-color: #FFFFFF !important;
-    padding-bottom: 20px !important;
-    padding-top: 20px !important;
-    padding-right: 16px !important;
-    padding-left: 16px !important;
+    padding: 20px 16px !important;
     border-radius: 6px !important;
     border: 2px solid #EAEAEA !important;
-    margin-right: 16px !important;
 }
 
 .brand-go-technic {
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    padding-left: 184px;
-    padding-top: 125px;
+    position: absolute !important;
+    width: 35px !important;
+    height: 35px !important;
+    padding-left: 184px !important;
+    padding-top: 125px !important;
 }
 
 .my-swiper-pagination {
-    width: 100%;
-    bottom: -0px;
-    left: 0;
-    height: 20px;
+    width: 100% !important;
+    bottom: -0px !important;
+    left: 0 !important;
+    height: 20px !important;
 }
 
 
 .swiper4 {
-    display: flex !important;
-    overflow-x: auto !important;
-    scroll-snap-type: x mandatory !important;
-    scroll-behavior: smooth !important;
-    gap: 5 !important;
-    padding: 10px 0 !important;
-    -ms-overflow-style: none !important;
-    scrollbar-width: none !important;
     margin-left: 16px !important;
+    margin-bottom: 40px !important;
 }
 
 .slide4 {
     display: flex !important;
-    flex: 0 0 auto !important;
     width: 250px !important;
     height: 200px !important;
     background-color: #FFFFFF !important;
     border-radius: 6px !important;
     border: 2px solid #EAEAEA !important;
-    margin-right: 16px !important;
     flex-direction: column !important;
     font-size: 14px !important;
 }
 
 .slide4 h3 {
     color: #7E7E82;
-    font-weight: lighter;
-    margin-left: 16px;
+    font-weight: lighter !important;
+    margin-left: 16px !important;
 }
 
 .slide4 p {
-    font-weight: lighter;
-    margin-top: -10px;
-    margin-left: 16px;
-    margin-bottom: -2px;
+    font-weight: lighter !important;
+    margin-top: -10px !important;
+    margin-left: 16px !important;
+    margin-bottom: -2px !important;
 }
 
 .order {
-    background-color: #FF3E79;
+    background-color: #FF3E79 !important;
     border-radius: 16px !important;
     border: 2px solid #EAEAEA !important;
-    color: #FFFFFF;
-    height: 32px;
-    width: 119px;
+    color: #FFFFFF !important;
+    height: 32px !important;
+    width: 119px !important;
+    position: absolute !important;
+    margin-left: 120px !important;
+    margin-top: 160px !important;
+    font-weight: bold !important;
+}
+
+// Стили для пагинации
+.swiper-pagination {
+    position: relative;
+    margin-top: 20px !important;
+    text-align: center;
+}
+
+.swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    background-color: #DDDDDD !important;
+    opacity: 1 !important;
+    margin: 0 6px !important;
+    transition: all 0.3s ease !important;
+    display: inline-block !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #B5B6BC !important;
+    transform: scale(1.2) !important;
+}
+
+// Специальные стили для каждого слайдера
+.brands .swiper-pagination {
+    margin-top: 30px;
+}
+
+.technic .swiper-pagination {
+    margin-top: 30px;
+}
+
+.price .swiper-pagination {
+    margin-top: 30px;
+}
+
+.commercial-text p {
+    padding-left: 16px !important;
+    padding-right: 30px !important;
+    font-size: 14px !important;
+    background-color: #F8F8F8 !important;
+}
+
+.commercial-text {
+    background-color: #F8F8F8 !important;
+}
+
+.read-more-text1::after {
+    content: "\003e";
+    margin-left: 5px;
+    font-size: 16px;
     position: absolute;
-    margin-left: 120px;
-    margin-top: 160px;
+    color: #FF3E79;
+
+
+}
+
+.read-more-text1 {
     font-weight: bold;
+    padding-left: 16px !important;
+    padding-right: 30px !important;
+    background-color: #F8F8F8 !important;
 }

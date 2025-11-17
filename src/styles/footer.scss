@@ -1,3 +1,18 @@
-footer{
-    background-color: black;
+@font-face {
+    font-family: "tt";
+    src: url(../font/TTLakes-Regular.ttf);
+}
+
+.footer-text {
+    text-align: center;
+    color: #7E7E82;
+    font-size: 14px;
+    margin-top: 57px;
+    border-top: solid 1px #D9FFF5 !important;
+}
+
+footer {
+    background-color: #F8F8F8 !important;
+    width: 100%;
+    overflow: hidden;
 }
