@@ -9,6 +9,18 @@
     font-size: 14px;
     margin-top: 57px;
     border-top: solid 1px #D9FFF5 !important;
+
+    @media (min-width: 768px) {
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 24px 24px;
+    }
+}
+
+.footer-text p {
+    flex-basis: 30%;
 }
 
 footer {
