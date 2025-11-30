@@ -1,4 +1,4 @@
-#checkstatusMenu {
+#profileMenu {
     display: block;
     position: fixed;
     top: 0;
@@ -10,6 +10,7 @@
     background-color: white;
     cursor: pointer;
 
+
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
 
@@ -18,10 +19,11 @@
         right: 0;
         transform: translateX(100%);
         width: 320px;
+        height: 100vh;
     }
 }
 
-#checkstatusMenu.open {
+#profileMenu.open {
     transform: translateX(0);
     box-shadow: 8px 0 20px rgba(0, 0, 0, 0.3);
 
@@ -30,7 +32,7 @@
     }
 }
 
-.checkstatus-menu__header {
+.profile-menu__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,35 +41,10 @@
     margin-bottom: 20px;
 }
 
-.status-info-block {
-    padding-left: 16px;
-    width: 85%;
-    font-size: 14px;
-    padding-top: 35px;
-}
-
-.status-login-block {
-    padding-left: 16px;
-    width: 85%;
-    font-size: 14px;
-    padding-top: 15px;
-}
-
-.burger__navigation--link-action {
-    margin-left: 16px;
-    margin-top: 20px;
-}
-
-.form-footer {
+.footer-form {
     display: flex;
-    justify-content: flex-end;
-    margin-top: 45px;
-
-    @media (min-width: 1440px) {
-        margin-top: 120px;
-    }
-}
-
-.next-step {
-    margin-top: 8px;
+    align-items: center;
+    justify-content:flex-end;
+    gap: 5px;
+    padding-right: 16px;
 }

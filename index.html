@@ -71,15 +71,15 @@
             </li>
           </div>
           <div class="header-right">
-            <li class="header__navigation--link-action">
+            <li id="call-btn" class="header__navigation--link-action">
               <img class="image" src="./src/image/phone.svg" alt="" />
             </li>
 
-            <li class="header__navigation--link-action">
+            <li id="chat-btn" class="header__navigation--link-action">
               <img class="image" src="./src/image/message.svg" alt="" />
             </li>
 
-            <li class="header__navigation--link-action">
+            <li id="profile-btn" class="header__navigation--link-action">
               <img class="image" src="./src/image/user.svg" alt="" />
             </li>
 
@@ -198,7 +198,7 @@
           * Свяжитесь с нашими операторами для уточнения условий гарантии
         </p>
         <div class="form-footer">
-          <p>Шаг 1 из 3</p>
+          <p class="step">Шаг 1 из 3</p>
           <img class="next-step-button" src="./src/image/go.svg" alt="" />
         </div>
       </div>
@@ -248,6 +248,133 @@
           <img class="next-step" src="./src/image/go.svg" alt="" />
         </div>
       </div>
+
+      <div class="call-menu" id="callMenu">
+        <div class="call-menu__header">
+          <li id="off3Menu" class="header__navigation--link call-menu__close">
+            <img class="image" src="./src/image/burg-close.svg" alt="" />
+          </li>
+        </div>
+        <h1 class="main__title">Заказать звонок</h1>
+        <div class="form-group">
+          <input
+            type="text"
+            id="model"
+            class="form-input"
+            placeholder="Номер телефона"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <select id="manufacturer" class="form-input form-select" required>
+            <option value="" disabled selected>Выбор темы</option>
+            <option value="brand1">Продукция Lenovo</option>
+            <option value="brand2">Продукция Samsung</option>
+          </select>
+        </div>
+        <p class="status-login-block">
+          Нажимая отправить, вы даете согласие на обработку персональных данных
+          и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a>
+        </p>
+        <div class="footer-form">
+          <p>Отправить</p>
+          <img class="next-step" src="./src/image/go.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="chat-menu" id="chatMenu">
+        <div class="chat-menu__header">
+          <li id="off4Menu" class="header__navigation--link chat-menu__close">
+            <img class="image" src="./src/image/burg-close.svg" alt="" />
+          </li>
+        </div>
+        <h1 class="main__title">Обратная связь</h1>
+        <div class="form-group">
+          <input
+            type="text"
+            id="model"
+            class="form-input"
+            placeholder="Имя"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            id="model"
+            class="form-input"
+            placeholder="Номер телефона"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            id="model"
+            class="form-input"
+            placeholder="Электронная почта"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <select id="manufacturer" class="form-input form-select" required>
+            <option value="" disabled selected>Выбор темы</option>
+            <option value="brand1">Продукция Lenovo</option>
+            <option value="brand2">Продукция Samsung</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            id="model"
+            class="form-input"
+            placeholder="Сообщение"
+            required
+          />
+        </div>
+        <p class="status-login-block">
+          Нажимая отправить, вы даете согласие на обработку персональных данных
+          и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a>
+        </p>
+        <div class="footer-form">
+          <p>Отправить</p>
+          <img class="next-step" src="./src/image/go.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="profile-menu" id="profileMenu">
+        <div class="profile-menu__header">
+          <li
+            id="off5Menu"
+            class="header__navigation--link profile-menu__close"
+          >
+            <img class="image" src="./src/image/burg-close.svg" alt="" />
+          </li>
+        </div>
+        <h1 class="main__title">Вход в личный кабинет</h1>
+        <div class="form-group">
+          <input
+            type="text"
+            id="model"
+            class="form-input"
+            placeholder="Электронная почта"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            id="model"
+            class="form-input"
+            placeholder="Пароль"
+            required
+          />
+        </div>
+        <div class="footer-form">
+          <img class="next-step" src="./src/image/go.svg" alt="" />
+        </div>
+      </div>
+
       <div class="services-header">
         <h1 class="main__title">Услуги и сервисы</h1>
         <div class="header-buttons">
@@ -327,11 +454,12 @@
             <img class="brand-go" src="./src/image/go.svg" alt="" />
           </div>
         </div>
+        <div class="additional-image-container"></div>
         <div class="swiper-pagination my-swiper-pagination"></div>
 
         <div class="show-all">
-          <img class="arrow" src="./src/image/arrows.svg" alt="" />
-          <div class="read-more-text">Показать все</div>
+          <img id="show-all" class="arrow" src="./src/image/arrows.svg" alt="" />
+          <div id="read-more" class="read-more">Показать все</div>
         </div>
       </div>
 
@@ -358,11 +486,12 @@
             </div>
           </div>
         </div>
+        <div class="additional-slide-container"></div>
         <div class="swiper-pagination my-swiper-pagination"></div>
 
-        <div class="show-all">
-          <img class="arrow" src="./src/image/arrows.svg" alt="" />
-          <div class="read-more-text">Показать все</div>
+        <div class="show-all2">
+          <img id="show-all2" class="arrow" src="./src/image/arrows.svg" alt="" />
+          <div id="read-more2" class="read-more2">Показать все</div>
         </div>
       </div>
 
@@ -492,5 +621,6 @@
         </div>
       </footer>
     </main>
+    <div class="modal-overlay" id="modalOverlay"></div>
   </body>
 </html>

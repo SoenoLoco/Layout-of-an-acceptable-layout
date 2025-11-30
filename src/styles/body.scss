@@ -65,14 +65,12 @@ body {
 
 }
 
+
 .services-header {
     display: flex;
     justify-content: space-between;
-    display: none;
 
-    @media (min-width: 768px) {
-        display: none;
-    }
+    @media (min-width: 768px) {}
 
     @media (min-width: 1440px) {
         display: flex;
@@ -84,13 +82,25 @@ body {
     gap: 32px;
     margin-top: 15px;
     margin-right: 16px;
+    cursor: pointer;
 }
 
 .header-button {
     display: flex;
     gap: 8px;
     align-items: center;
+    display: none;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+
+    @media (min-width: 1440px) {
+        display: flex;
+    }
 }
+
+
 
 .text-about {
     @media (min-width: 768px) {
@@ -136,6 +146,7 @@ body {
     display: flex;
     align-items: center;
     gap: 5px;
+    cursor: pointer;
 
     @media (min-width: 768px) {
         grid-column: 1 / 2;
@@ -210,6 +221,7 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
     margin-left: 16px;
+    cursor: pointer;
 
 }
 
@@ -420,10 +432,6 @@ body {
 .price {
     max-width: 100%;
 
-    @media (min-width: 768px) {
-        display: none !important;
-    }
-
 }
 
 .swiper4 {
@@ -468,10 +476,20 @@ body {
     color: #FFFFFF;
     height: 32px;
     width: 119px;
+    font-weight: bold;
+    cursor: pointer;
     position: absolute;
     margin-left: 120px;
     margin-top: 160px;
-    font-weight: bold;
+
+    @media (min-width: 768px) {
+        width: 120px !important;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        position: 0;
+    }
+
 }
 
 .third-heading {
@@ -622,4 +640,68 @@ body {
     padding-left: 16px;
     padding-right: 30px;
     background-color: #F8F8F8;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 99;
+
+    @media (min-width: 768px) {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    &.active {
+        display: block;
+    }
+}
+
+.additional-image-container {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: flex;
+        margin-left: 16px;
+        gap: 32px;
+        margin-bottom: 5px;
+    }
+
+    @media (min-width: 1440px) {
+        padding-top: 12px;
+    }
+}
+
+.show-all2 {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: flex-start;
+        cursor: pointer;
+    }
+}
+
+.show-all {
+    cursor: pointer;
+}
+
+.additional-slide-container {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: flex;
+        margin-left: 16px;
+        gap: 32px;
+        margin-bottom: 5px;
+    }
+
+    @media (min-width: 1440px) {
+        padding-top: 12px;
+        gap: 75px;
+    }
 }
