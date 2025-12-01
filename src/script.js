@@ -293,19 +293,22 @@ document.addEventListener("DOMContentLoaded", function () {
   let isExpanded = false;
 
   showAllContainer.addEventListener("click", function () {
+    // Получаем базовый URL сайта
+    const baseUrl = window.location.origin;
+
     if (!isExpanded) {
       additionalImageContainer.innerHTML = `
         <div class="swiper-slide slide2">
-          <img class="brand-image" src="./src/image/vitek.png" alt="" />
-          <img class="brand-go" src="./src/image/go.svg" alt="" />
+          <img class="brand-image" src="${baseUrl}/src/image/vitek.png" alt="" />
+          <img class="brand-go" src="${baseUrl}/src/image/go.svg" alt="" />
         </div>
         <div class="swiper-slide slide2">
-          <img class="brand-image" src="./src/image/Phillips-Logo-2008.png" alt="" />
-          <img class="brand-go" src="./src/image/go.svg" alt="" />
+          <img class="brand-image" src="${baseUrl}/src/image/Phillips-Logo-2008.png" alt="" />
+          <img class="brand-go" src="${baseUrl}/src/image/go.svg" alt="" />
         </div>
         <div class="swiper-slide slide2">
-          <img class="brand-image" src="./src/image/HansaLogo.png" alt="" />
-          <img class="brand-go" src="./src/image/go.svg" alt="" />
+          <img class="brand-image" src="${baseUrl}/src/image/HansaLogo.png" alt="" />
+          <img class="brand-go" src="${baseUrl}/src/image/go.svg" alt="" />
         </div>
       `;
 
