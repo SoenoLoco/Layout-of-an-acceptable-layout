@@ -144,6 +144,21 @@ closeBtn.addEventListener("click", function () {
   document.documentElement.style.overflow = "";
 });
 
+// Для бургер-меню
+const navItems = document.querySelectorAll(
+  ".burger-menu__nav-container .nav-link"
+);
+
+navItems.forEach((link) => {
+  link.addEventListener("click", function (e) {
+    navItems.forEach((item) => {
+      item.parentElement.classList.remove("active");
+    });
+
+    this.parentElement.classList.add("active");
+  });
+});
+
 //repair
 
 const repairMenu = document.getElementById("repairMenu");
